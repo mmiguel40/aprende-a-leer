@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🦜 El Camino de las Letras
 
-## Getting Started
+**El Camino de las Letras** es una aplicación educativa interactiva diseñada para acompañar a los niños en su proceso de aprendizaje de la lectoescritura. 
 
-First, run the development server:
+Este proyecto nació con un propósito muy especial: **ayudar a mi hijo**, quien se encuentra en la edad mágica de descubrir las letras y las palabras. Está inspirado en la secuencia pedagógica del libro "Mi Jardín", adaptándola a un entorno digital moderno, gamificado y lleno de estímulos positivos.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🗺️ Estructura del Juego: Las 3 Islas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+El aprendizaje se divide en tres grandes áreas o islas, que los niños pueden recorrer a medida que progresan:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  **Isla de las Sílabas (Isla 1 - 🟢 Fácil)**: 
+    *   Enfoque en vocales y sílabas simples (m, p, s, l, n, d, t).
+    *   El niño debe completar palabras arrastrando la sílaba faltante.
+2.  **Isla de las Palabras (Isla 2 - 🟠 Medio)**: 
+    *   Enfoque en la formación de palabras completas y vocabulario básico.
+    *   Retos donde el niño identifica y construye palabras a partir de sonidos e imágenes.
+3.  **Isla de las Oraciones (Isla 3 - 🟣 Difícil)**: 
+    *   Enfoque en la lectura comprensiva de frases cortas.
+    *   El desafío consiste en completar oraciones con sentido lógico.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Características Principales
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*   **Onboarding Personalizado**: La aplicación captura el nombre del niño y lo saluda personalmente al iniciar la aventura.
+*   **Audio Dinámico (TTS)**: Gracias a la integración con Google TTS, el juego puede decir el nombre del niño para hacerlo sentir el protagonista de su propio aprendizaje.
+*   **Modo Offline (PWA)**: Una vez descargados los paquetes de audio, el juego funciona totalmente sin internet, ideal para usar en tablets durante viajes o lugares sin conexión.
+*   **Feedback Positivo**: Sistema de animaciones, sonidos de aliento y confetti dinámico para celebrar cada pequeño logro.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠️ Configuración Técnica
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+El proyecto está construido con **Next.js**, **Tailwind CSS** y **Framer Motion** para las animaciones.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Dependencia de Google Cloud TTS
+La aplicación utiliza la API de **Google Text-to-Speech** exclusivamente para el proceso de **Onboarding**. Esta conexión permite generar audios personalizados con el nombre del niño la primera vez que inicia el juego.
+
+Para que esta funcionalidad esté activa, se requiere una API Key de Google Cloud configurada en las variables de entorno:
+
+1.  Crea un archivo `.env.local` en la raíz del proyecto.
+2.  Agrega tu clave:
+    ```env
+    GOOGLE_TTS_API_KEY=tu_api_key_aqui
+    ```
+
+*Nota: El resto de los audios pedagógicos vienen pre-generados o se pueden descargar en paquetes, por lo que el uso de la API es mínimo y enfocado solo en la personalización inicial.*
+
+---
+
+HHecho con ❤️ para mi pequeño futuro lector Lucas.
