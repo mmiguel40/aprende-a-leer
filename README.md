@@ -50,4 +50,4 @@ Para que esta funcionalidad esté activa, se requiere una API Key de Google Clou
 
 ---
 
-HHecho con ❤️ para mi pequeño futuro lector Lucas.
+Hecho con ❤️ para mi pequeño futuro lector Lucas.
