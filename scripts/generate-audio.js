@@ -1,8 +1,9 @@
 const fs = require('fs');
 const path = require('path');
+require('dotenv').config({ path: path.join(__dirname, '..', '.env.local') });
 
-// ── Configuración (misma que original) ────────────────────────────────
-const API_KEY = 'AIzaSyD02tTlrSU0iQJTFLmJEUFCp0U6AAFWNKQ';
+// ── Configuración ────────────────────────────────────────────────────
+const API_KEY = process.env.GOOGLE_TTS_API_KEY;
 const TTS_URL = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${API_KEY}`;
 
 const outputDir = path.join(__dirname, '..', 'public', 'audio');

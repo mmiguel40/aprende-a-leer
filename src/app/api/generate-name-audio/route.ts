@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 
 // Google TTS API Route — genera audio personalizado con el nombre del niño
-// Se llama solo la primera vez (onboarding), el resultado se guarda en /public/audio/
-const TTS_URL = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${process.env.GOOGLE_TTS_API_KEY || "AIzaSyD02tTlrSU0iQJTFLmJEUFCp0U6AAFWNKQ"}`;
+const API_KEY = process.env.GOOGLE_TTS_API_KEY;
+const TTS_URL = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${API_KEY}`;
 
 const fs = await import("fs/promises");
 const path = await import("path");
