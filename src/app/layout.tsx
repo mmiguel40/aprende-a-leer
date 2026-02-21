@@ -13,7 +13,11 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: "Aventura de Letras",
   description: "Aprende a leer jugando - Juego Educativo Interactivo",
+  manifest: "/manifest.json",
+  themeColor: "#38bdf8",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0",
 };
+
 
 export default function RootLayout({
   children,

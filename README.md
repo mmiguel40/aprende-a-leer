@@ -26,8 +26,27 @@ El aprendizaje se divide en tres grandes áreas o islas, que los niños pueden r
 
 *   **Onboarding Personalizado**: La aplicación captura el nombre del niño y lo saluda personalmente al iniciar la aventura.
 *   **Audio Dinámico (TTS)**: Gracias a la integración con Google TTS, el juego puede decir el nombre del niño para hacerlo sentir el protagonista de su propio aprendizaje.
-*   **Modo Offline (PWA)**: Una vez descargados los paquetes de audio, el juego funciona totalmente sin internet, ideal para usar en tablets durante viajes o lugares sin conexión.
+*   **Experiencia PWA Completa 📱**: El juego es una *Progressive Web App*. Puedes instalarlo en la pantalla de inicio de tu móvil o tablet (Android/iOS) y se comportará como una aplicación nativa, a pantalla completa y sin barras de navegación.
+*   **Modo Offline**: Una vez descargados los paquetes de audio, el juego funciona totalmente sin internet, ideal para usar en tablets durante viajes o lugares sin conexión.
 *   **Feedback Positivo**: Sistema de animaciones, sonidos de aliento y confetti dinámico para celebrar cada pequeño logro.
+
+---
+
+## 👨‍💻 Acerca del Desarrollador
+
+<div align="center">
+  <img src="/dev_avatar.png" width="120" alt="Miguel - Desarrollador" style="border-radius: 50%;" />
+  
+  ### ¡Hola! Soy Miguel
+  
+  Desarrollé **Aventura de Letras** con mucho cariño para mi hijo **Lucas**, buscando transformar el aprendizaje de la lectura en una experiencia mágica y divertida.
+  
+  Me apasiona crear tecnología que tenga un impacto positivo. Si te gusta el proyecto o quieres saber más sobre mi trabajo, ¡te invito a conectar!
+  
+  [🌐 Mi Portafolio](https://landing-personal-8n1b.vercel.app/) | [💻 Ver Código en GitHub](https://github.com/mmiguel40/aprende-a-leer)
+  
+  ¡Comparte esta aventura con otros pequeños futuros lectores! 🚀
+</div>
 
 ---
 
